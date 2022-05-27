@@ -1,0 +1,22 @@
+ /* regras de estilo */
+ body { background-color: lightblue; /* background-image: url("hf.jpg"); */ }
+
+ /* rgb(255, 99, 71) */ 
+ /* hsl(9, 100%, 50%) */
+     h1 {text-transform: uppercase; letter-spacing: 8px;}
+ /* word-spacing */
+ /* lowercase capitalize */
+     h2 { border-style: dotted dashed solid double; border-width: 20px 5px ; 
+ border-color:tomato green white gray; padding:1px; }
+     h1, h2 { color:white; text-align: center; }
+     a {text-decoration: none;}
+     #littlep { font-size:80%; }
+     .destaque {text-align:center; border: 8px solid red; border-radius: 4px; } 
+  
+     p { font-family: Arial, Helvetica, sans-serif; font-size: 120%; margin-left: 70px; }
+     p.nrw { width: 18%;}
+ /* width
+  height max-width min-width  */
+     p.secret {direction: rtl; unicode-bidi: bidi-override; text-decoration-line: line-through; text-decoration-style:double;}/* underline overline */
+      .hred { color: red;}
+ 

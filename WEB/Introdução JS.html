@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- <script src="codigo.js"></script> -->
+    </head>
+    <body>
+        <h1>Manipula</h1>
+        <img id="xyz" src="cascao-nao.gif">
+        <button type="button" onclick= "document.getElementById('xyz').src='../elefante-elefante-tomando-banho.gif'">Imagem 1</button>
+        <button type="button" onclick= "document.getElementById('xyz').src='../cascao-nao.gif'">Imagem 2</button>
+
+        <p id="texto">Ola Mundo!</p>
+        <button type="button" onclick="apaga()">Apagar</button>
+        <button type="button" onclick="mostra()">Mostrar</button>
+
+        <p id="sanduba"></p>
+        
+        <p><input type="text" id="ano"></p>
+        <p><button onclick="idade()">Idade</button></p>
+        <p id="idade"></p>
+
+       
+        <script>
+            function apaga(){
+                document.getElementById('texto').style.display="none";
+            }
+            function mostra(){
+                document.getElementById('texto').style.display="block"
+            }
+
+            let x = {burguer:"Picanha", hotdog:"Salsicha"};	
+            // Exibir resultado
+            document.getElementById("sanduba").innerHTML = x.hotdog + " de " + x.burguer;
+
+            function idade() {
+            var ano = document.getElementById("ano").value;
+            // Exibir resultado
+            document.getElementById("idade").innerHTML = 
+            "Voc&ecirc; tem " + (2022 - ano) + " anos";
+            }
+            
+            function lerIdade() {
+                return document.getElementById("ano").value;
+            }
+            function exibirIdade(nasc) {
+                document.getElementById("idade").innerHTML = 
+                "Voc&ecirc; tem " + (2022 - nasc) + " anos";
+            }
+            function idade() {
+                let ano = lerIdade();
+                exibirIdade(ano);
+            }
+        </script>
+    </body>
+</html>
+
+
