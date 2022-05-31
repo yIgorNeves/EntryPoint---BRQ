@@ -1,9 +1,5 @@
 package appbookelandia.model;
 
-/**
- *
- * @author Igor Neves
- */
 public class Login {
     private String email;
     private String senha;

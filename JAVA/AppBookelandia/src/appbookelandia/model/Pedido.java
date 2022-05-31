@@ -1,17 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package appbookelandia.model;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-
-/**
- *
- * @author Igor Neves
- */
 public class Pedido {
     private int numeroDoPedido;
     private Cliente cliente;
@@ -22,7 +13,6 @@ public class Pedido {
     private double valorTotal;
     private ArrayList<ProdutoPedido> produto;
     
-
     public Pedido(int numeroDoPedido, Cliente cliente, FormaDePagamento formaDePagamento, boolean status, LocalDate data, String cupom, double valorTotal) {
         this.numeroDoPedido = numeroDoPedido;
         this.cliente = cliente;
@@ -31,17 +21,17 @@ public class Pedido {
         this.data = data;
         this.cupom = cupom;
         this.valorTotal = valorTotal;
-        this.produto = new ArrayList<ProdutoPedido>();
+        this.produto = new ArrayList<>();
 
     }
     
     public Pedido (int numeroDoPedido){
         this.numeroDoPedido = numeroDoPedido;
-        this.produto = new ArrayList<ProdutoPedido>();
+        this.produto = new ArrayList<>();
     }
     
     public Pedido(){
-        this.produto = new ArrayList<ProdutoPedido>();
+        this.produto = new ArrayList<>();
     }
     
     public void adicionaProduto(int quantidade, Produto p){
@@ -113,7 +103,6 @@ public class Pedido {
 
     public void setValorTotal(double valorTotal) {
         this.valorTotal = valorTotal;
-    }
-    
+    }   
     
 }

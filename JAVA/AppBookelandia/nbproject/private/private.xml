@@ -3,9 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Igor%20Neves/Documents/NetBeansProjects/AppBookelandia/src/appbookelandia/AppBookelandia.java</file>
-            <file>file:/C:/Users/Igor%20Neves/Documents/NetBeansProjects/AppBookelandia/src/appbookelandia/model/Cliente.java</file>
-            <file>file:/C:/Users/Igor%20Neves/Documents/NetBeansProjects/AppBookelandia/src/appbookelandia/model/Login.java</file>
+            <file>file:/d:/Curso%20BRQ/EntryPoint---BRQ/JAVA/AppBookelandia/src/appbookelandia/view/FrmCadProdutos.java</file>
+            <file>file:/D:/Curso%20BRQ/EntryPoint---BRQ/JAVA/AppBookelandia/src/appbookelandia/AppBookelandia.java</file>
+            <file>file:/d:/Curso%20BRQ/EntryPoint---BRQ/JAVA/AppBookelandia/src/appbookelandia/view/FrmPrincipal.java</file>
+            <file>file:/d:/Curso%20BRQ/EntryPoint---BRQ/JAVA/AppBookelandia/src/appbookelandia/view/FrmCadCliente.java</file>
+            <file>file:/D:/Curso%20BRQ/EntryPoint---BRQ/JAVA/AppBookelandia/src/appbookelandia/controller/ControllerCadClientes.java</file>
         </group>
     </open-files>
 </project-private>

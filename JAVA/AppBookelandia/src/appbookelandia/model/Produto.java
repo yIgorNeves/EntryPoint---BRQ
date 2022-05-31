@@ -1,9 +1,5 @@
 package appbookelandia.model;
 
-/**
- *
- * @author Igor Neves
- */
 public class Produto {
     
     private int codigoDoProduto;
