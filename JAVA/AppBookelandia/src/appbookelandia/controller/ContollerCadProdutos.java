@@ -1,13 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package appbookelandia.controller;
 
-/**
- *
- * @author Igor Neves
- */
+import appbookelandia.view.FrmCadProdutos;
+
 public class ContollerCadProdutos {
+    private FrmCadProdutos view;
+
+    public ContollerCadProdutos(FrmCadProdutos view) {
+        this.view = view;
+    }
+    
+    
     
 }
