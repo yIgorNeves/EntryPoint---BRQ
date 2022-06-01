@@ -2,10 +2,9 @@
 
 
 
-<h3>Este repositorio foi criado com intuito de compartilhar os conhecimentos do meu estudo em React.</h3>
-<h4>Estes estão sendo meus primeiros passos nessa caminhada.</h4>
-<h4>Todo o estudo esta sendo realizado atraves deste <a href="https://www.udemy.com/course/react-do-zero-a-maestria-c-hooks-router-api-projetos/">🔗 curso</a>.</h4>
-<p></p>
+<h3>Este repositorio foi criado com intuito de o site proposto pelo professor Cid Andrade da Grande Porte.</h3>
+<h4>Este site foi criado utilizando apenas HTML e CSS.</h4>
+<p>Projeto ainda não finalizado e pode ter mudança total</p>
 <p></p>
 <p>Qualquer duvida ou conselho pode entrar em contato comigo pelos canais de comunicação abaixo</p>
 
@@ -16,9 +15,9 @@
 ---
 
 <a href="https://www.linkedin.com/in/igor-neves-5459b0186/">
- <img style="border-radius: 50%;" src="https://instagram.fcnf1-1.fna.fbcdn.net/v/t51.2885-15/240646454_644548266522378_6425989851808428144_n.jpg?stp=dst-jpg_e35&_nc_ht=instagram.fcnf1-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=hXSH9UP1jUoAX90wgfW&edm=ALQROFkBAAAA&ccb=7-4&ig_cache_key=MjY0ODM4MTM5OTMxMTEyNzYzMA%3D%3D.2-ccb7-4&oh=00_AT_iD0Yd4Ml7q28Q_Hhm62MglwW8-M64DXDuUkRrrJv7aA&oe=62704549&_nc_sid=30a2ef" width="100px;" alt=""/>
+ <img style="border-radius: 50%;" src="https://instagram.fcnf1-1.fna.fbcdn.net/v/t51.2885-15/240646454_644548266522378_6425989851808428144_n.jpg?stp=dst-jpg_e35&_nc_ht=instagram.fcnf1-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=jve_U4h6KMcAX9T2vmj&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjY0ODM4MTM5OTMxMTEyNzYzMA%3D%3D.2-ccb7-5&oh=00_AT__YA26a3GQDFYtG2SljoCwf9jgGyEPHLfre6tpswsKzg&oe=629DC109&_nc_sid=30a2ef" width="100px;" alt=""/>
  <br />
- <sub><b>Igor Neves</b></sub></a> <a href="https://www.linkedin.com/in/igor-neves-5459b0186/" title="Rocketseat">🚀</a>
+ <sub><b>Igor Neves</b></sub></a> <a href="https://www.linkedin.com/in/igor-neves-5459b0186/" title="Rocketseat" target="_blank">🚀</a>
 
 
 Feito com ❤️ por Igor Neves 👋🏽 Entre em contato!
