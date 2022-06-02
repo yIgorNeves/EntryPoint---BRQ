@@ -13,7 +13,7 @@ public class Cliente {
     private String endereco;
     private String nome;
     private String telefone;
-    private LocalDate dataDeCadastro;  
+    public LocalDate dataDeCadastro;  
     
     public String getEndereco() {
         return endereco;

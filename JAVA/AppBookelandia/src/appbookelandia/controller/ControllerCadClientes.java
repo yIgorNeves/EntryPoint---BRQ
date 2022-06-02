@@ -4,10 +4,12 @@
  */
 package appbookelandia.controller;
 
+import appbookelandia.dal.ClienteDAO;
 import appbookelandia.model.Cliente;
 import appbookelandia.model.Login;
 import appbookelandia.model.NivelDeAcesso;
 import appbookelandia.view.FrmCadCliente;
+import java.sql.SQLException;
 
 /**
  *
@@ -44,5 +46,18 @@ public class ControllerCadClientes {
         view.getTxtNome().setText(" ");
         view.getTxtSenha().setText(" ");
         view.getTxtTelefone().setText(" ");
+    }
+    
+    public void consultaCliente() throws SQLException {        
+        String cpf = view.getTxtCPF().getText();
+    
+        ClienteDAO clienteDao = new ClienteDAO();
+        Cliente cliente = clienteDao.recupera(cpf);
+    
+        if (cliente != null) {
+            view.getTxtNome().setText(cliente.getNome());
+            view.getTxtEndereco().setText(cliente.getEndereco());
+            view.getTxtTelefone().setText(cliente.getTelefone());
+        }
     }
 }

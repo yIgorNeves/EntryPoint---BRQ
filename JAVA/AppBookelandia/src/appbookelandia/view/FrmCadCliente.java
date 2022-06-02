@@ -51,6 +51,7 @@ public class FrmCadCliente extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         TxtEmail = new javax.swing.JTextField();
         TxtSenha = new javax.swing.JPasswordField();
+        jButton1 = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -99,41 +100,49 @@ public class FrmCadCliente extends javax.swing.JFrame {
 
         jLabel7.setText("Email:");
 
+        jButton1.setText("Consulta cliente");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(BtnCadastra)
-                        .addGap(14, 14, 14))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel7)
+                        .addGap(18, 18, 18)
+                        .addComponent(TxtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel1))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(TxtNome)
+                            .addComponent(TxtEndereco)
+                            .addComponent(TxtCPF)
+                            .addComponent(TxtTelefone)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel7)
-                                .addGap(18, 18, 18)
-                                .addComponent(TxtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel1))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(TxtNome)
-                                    .addComponent(TxtEndereco)
-                                    .addComponent(TxtCPF)
-                                    .addComponent(TxtTelefone)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(23, 23, 23)
-                                        .addComponent(jLabel6)
-                                        .addGap(0, 103, Short.MAX_VALUE))
-                                    .addComponent(TxtSenha))))
-                        .addGap(42, 42, 42))))
+                                .addGap(23, 23, 23)
+                                .addComponent(jLabel6)
+                                .addGap(0, 103, Short.MAX_VALUE))
+                            .addComponent(TxtSenha))))
+                .addGap(42, 42, 42))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(65, 65, 65)
+                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(BtnCadastra)
+                .addGap(14, 14, 14))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -165,7 +174,9 @@ public class FrmCadCliente extends javax.swing.JFrame {
                             .addComponent(jLabel5)
                             .addComponent(TxtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(40, 40, 40)
-                        .addComponent(BtnCadastra))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(BtnCadastra)
+                            .addComponent(jButton1)))
                     .addComponent(jLabel7))
                 .addContainerGap())
         );
@@ -187,6 +198,16 @@ public class FrmCadCliente extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "Usuario Cadastrado com sucesso");
         controler.limpaTela();
     }//GEN-LAST:event_BtnCadastraActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        try{
+            controler.consultaCliente();
+            
+        }catch(Exception ex){
+            JOptionPane.showMessageDialog(this, "Deu erro!");
+            ex.printStackTrace();
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     public JButton getBtnCadastra() {
         return BtnCadastra;
@@ -289,6 +310,7 @@ public class FrmCadCliente extends javax.swing.JFrame {
     private javax.swing.JTextField TxtNome;
     private javax.swing.JPasswordField TxtSenha;
     private javax.swing.JTextField TxtTelefone;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
